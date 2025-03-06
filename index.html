@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      @media (max-width: 640px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        .contact-btn {
+          font-size: 0.875rem;
+          padding: 0.5rem 1rem;
+        }
+
+        .play-card {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <nav class="bg-white shadow-md">
+      <div
+        class="container mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <a href="#" class="text-xl font-bold text-gray-800">Hamza Aftab</a>
+        <div class="block lg:hidden">
+          <button
+            id="navbar-toggle"
+            class="text-gray-600 hover:text-black focus:outline-none"
+          >
+            <i class="fa-solid fa-bars fa-lg"></i>
+          </button>
+        </div>
+        <div id="navbar-menu" class="hidden lg:flex space-x-6">
+          <a href="index.html" class="text-gray-600 hover:text-black">Home</a>
+          <a href="personalprofile.html" class="text-gray-600 hover:text-black"
+            >Profile</a
+          >
+          <a href="Gallery.html" class="text-gray-600 hover:text-black"
+            >Gallery</a
+          >
+          <a href="career.html" class="text-gray-600 hover:text-black">Goals</a>
+          <a href="projects.html" class="text-gray-600 hover:text-black"
+            >Projects</a
+          >
+          <a href="skills.html" class="text-gray-600 hover:text-black"
+            >Skills</a
+          >
+          <a href="contact.html" class="text-gray-600 hover:text-black"
+            >Contact</a
+          >
+        </div>
+      </div>
+      <div id="mobile-menu" class="lg:hidden hidden">
+        <a
+          href="index.html"
+          class="block text-gray-600 hover:text-black py-2 px-4"
+          >Home</a
+        >
+        <a
+          href="personalprofile.html"
+          class="block text-gray-600 hover:text-black py-2 px-4"
+          >Profile</a
+        >
+        <a
+          href="gallery.html"
+          class="block text-gray-600 hover:text-black py-2 px-4"
+          >Gallery</a
+        >
+        <a
+          href="career.html"
+          class="block text-gray-600 hover:text-black py-2 px-4"
+          >Goals</a
+        >
+        <a
+          href="projects.html"
+          class="block text-gray-600 hover:text-black py-2 px-4"
+          >Projects</a
+        >
+        <a
+          href="skills.html"
+          class="block text-gray-600 hover:text-black py-2 px-4"
+          >Skills</a
+        >
+        <a
+          href="contact.html"
+          class="block text-gray-600 hover:text-black py-2 px-4"
+          >Contact</a
+        >
+      </div>
+    </nav>
+    <section
+      class="flex flex-col md:flex-row justify-center items-center gap-10 p-6 min-h-screen"
+    >
+      <div
+        class="bg-gradient-to-r from-yellow-200 to-green-100 rounded-lg shadow-lg p-6 w-full md:w-2/4"
+      >
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Hello, I’m Hamza Aftab, a Software Engineer by profession
+        </h1>
+        <p class="text-md md:text-lg text-gray-700 mb-6">
+          I am a passionate software engineer with expertise in developing
+          scalable web applications. I enjoy creating efficient, user-focused
+          solutions and thrive in collaborative environments. I am dedicated to
+          continuous learning and innovation in the tech space.
+        </p>
+        <div class="flex items-center space-x-4">
+          <a
+            href="#contact"
+            class="flex items-center bg-black text-white px-4 py-2 rounded-lg"
+          >
+            <i class="fas fa-envelope mr-2"></i> Contact me
+          </a>
+          <div class="flex space-x-4">
+            <a
+              href="https://www.linkedin.com/in/hamza-aftab-131380283/"
+              target="_blank"
+              class="text-gray-600 hover:text-black"
+            >
+              <i class="fa-brands fa-linkedin fa-lg"></i>
+            </a>
+            <a
+              href="https://github.com/HamzaAftabKhan"
+              target="_blank"
+              class="text-gray-600 hover:text-black"
+            >
+              <i class="fa-brands fa-github fa-lg"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="text-gray-600 hover:text-black"
+            >
+              <i class="fa-brands fa-instagram fa-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white rounded-lg shadow-lg overflow-hidden w-full md:w-1/4"
+      >
+        <img
+          src="assests/profileimage.jpeg"
+          alt="Your Picture"
+          class="h-full w-full object-cover"
+        />
+      </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-4 text-center">
+      <p>&copy; 2024 Hamza Aftab. All rights reserved.</p>
+    </footer>
+    <script>
+      document
+        .getElementById("navbar-toggle")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>
