@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-white shadow-md"></nav>
+      <div
+        class="container mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <a href="#" class="text-xl font-bold text-gray-800">Hamza Aftab</a>
+        <div class="block lg:hidden">
+          <button
+            id="navbar-toggle"
+            class="text-gray-600 hover:text-black focus:outline-none"
+          >
+            <i class="fa-solid fa-bars fa-lg"></i>
+          </button>
+        </div>
+        <div id="navbar-menu" class="hidden lg:flex space-x-6">
+          <a href="index.html" class="text-gray-600 hover:text-black">Home</a>
+          <a href="personalprofile.html" class="text-gray-600 hover:text-black"
+            >Profile</a
+          >
+          <a href="Gallery.html" class="text-gray-600 hover:text-black"
+            >Gallery</a
+          >
+          <a href="career.html" class="text-gray-600 hover:text-black"
+            >Goals</a
+          >
+          <a href="projects.html" class="text-gray-600 hover:text-black"
+            >Projects</a
+          >
+          <a href="skills.html" class="text-gray-600 hover:text-black"
+            >Skills</a
+          >
+          <a href="contact.html" class="text-gray-600 hover:text-black"
+            >Contact</a
+          >
+        </div>
+      </div>
+      <div id="mobile-menu" class="lg:hidden hidden">
+        <a
+          href="index.html"
+          class="block text-gray-600 hover:text-black py-2 px-4"
+          >Home</a
+        >
+        <a
+          href="personalprofile.html"
+          class="block text-gray-600 hover:text-black py-2 px-4"
+          >Profile</a
+        >
+        <a
+          href="gallery.html"
+          class="block text-gray-600 hover:text-black py-2 px-4"
+          >Gallery</a
+        >
+        <a
+          href="career.html"
+          class="block text-gray-600 hover:text-black py-2 px-4"
+          >Goals</a
+        >
+        <a
+          href="projects.html"
+          class="block text-gray-600 hover:text-black py-2 px-4"
+          >Projects</a
+        >
+        <a
+          href="skills.html"
+          class="block text-gray-600 hover:text-black py-2 px-4"
+          >Skills</a
+        >
+        <a
+          href="contact.html"
+          class="block text-gray-600 hover:text-black py-2 px-4"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <section class="container mx-auto p-6">
+      <h1 class="text-3xl font-bold text-center mb-6">My Projects</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-yellow-200 to-green-100">
+          <img
+            src="assests/fastgamingclub.JPG"
+            alt="Project Screenshot"
+            class="w-full h-48 object-fit"
+          />
+          <div class="p-6">
+            <h2 class="text-xl font-semibold mb-2">Fast Gaming Club</h2>
+            <p class="text-gray-700 mb-4">
+              Built a fullstack web application using MERN stack
+            </p>
+            <p class="text-gray-600 mb-4">
+              <strong>Technologies Used:</strong> React, Node.js, Express, MongoDB
+            </p>
+            <div class="flex justify-between">
+              <a
+                href="https://github.com/HamzaAftabKhan/FAST-Gaming-Club"
+                class="text-blue-500 hover:underline"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-yellow-200 to-green-100">
+          <img
+            src="assests/maze game.jpg"
+            alt="Project Screenshot"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h2 class="text-xl font-semibold mb-2">Car Maze Game</h2>
+            <p class="text-gray-700 mb-4">
+              Built a console based car maze game using C++ using various DSA such as Stack, Queue, Linklist, Dijkstra Algorithm
+            </p>
+            <p class="text-gray-600 mb-4">
+              <strong>Technologies Used:</strong> C++
+            </p>
+            <div class="flex justify-between">
+              <a
+                href="https://github.com/HamzaAftabKhan/BPMN-Model-Analysis"
+                class="text-blue-500 hover:underline"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-yellow-200 to-green-100">
+          <img
+            src="assests/flightmangementsystem.png"
+            alt="Project Screenshot"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h2 class="text-xl font-semibold mb-2">Flight Management System</h2>
+            <p class="text-gray-700 mb-4">
+              Made a console based flight management system using Object Oriented Programming
+            </p>
+            <p class="text-gray-600 mb-4">
+              <strong>Technologies Used:</strong> C++
+            </p>
+            <div class="flex justify-between">
+              <a
+                href="https://github.com/HamzaAftabKhan/Flight-Management-System"
+                class="text-blue-500 hover:underline"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-4 text-center">
+      <p>&copy; 2024 Hamza Aftab. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("navbar-toggle")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>
